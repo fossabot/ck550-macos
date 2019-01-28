@@ -1,0 +1,31 @@
+# https://github.com/vookimedlo/ck550-macos
+
+language: swift
+xcode_workspace: ck550.xcworkspace
+branches:
+  only:
+    - master
+os: osx
+osx_image: xcode10.1
+
+sudo: false
+
+compiler:
+  - clang
+  - gcc
+ 
+install:
+  - 'brew update'
+  - 'brew install swiftlint'
+  - 'brew install carthage'
+  - 'carthage update --platform Mac'
+
+before_script: 
+  - 'uname -a'
+
+script:
+  - 'cd src'
+  - 'xcodebuild -target ck550'
+
+after_script:
+  - 'echo "Done."'
