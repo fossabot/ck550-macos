@@ -14,7 +14,7 @@ compiler:
 install:
   - 'brew update'
   - 'brew upgrade swiftlint'
-  - 'brew install carthage'
+  - 'brew upgrade carthage'
   - 'carthage update --platform Mac'
 
 before_script: 
