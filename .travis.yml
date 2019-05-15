@@ -15,7 +15,7 @@ install:
   - 'brew update'
   - 'brew upgrade swiftlint'
   - 'brew upgrade carthage'
-  - 'carthage install --platform Mac --verbose'
+  - 'carthage bootstrap --platform macOS --verbose'
 
 before_script: 
   - 'uname -a'
