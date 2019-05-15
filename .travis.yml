@@ -13,7 +13,7 @@ compiler:
  
 install:
   - 'brew update'
-  - 'brew install swiftlint'
+  - 'brew upgrade swiftlint'
   - 'brew install carthage'
   - 'carthage update --platform Mac'
 
