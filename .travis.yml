@@ -2,9 +2,7 @@
 
 language: swift
 xcode_workspace: ck550.xcworkspace
-branches:
-  only:
-    - master
+
 os: osx
 osx_image: xcode10.1
 
@@ -12,7 +10,6 @@ sudo: false
 
 compiler:
   - clang
-  - gcc
  
 install:
   - 'brew update'
