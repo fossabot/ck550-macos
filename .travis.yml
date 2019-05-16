@@ -13,8 +13,8 @@ compiler:
 
 install:
   - 'brew update'
-  - 'brew upgrade swiftlint'
-  - 'brew upgrade carthage'
+  - 'brew upgrade -f swiftlint'
+  - 'brew upgrade -f carthage'
   - 'carthage bootstrap --platform macOS --verbose'
 
 before_script:
